@@ -2,6 +2,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { BoxesComponent } from './examples/boxes/boxes.component';
 // import { ProgressComponent } from './progress/progress.component';
 // import { Graficas1Component } from './graficas1/graficas1.component';
 // import { AccoutSettingsComponent } from './accout-settings/accout-settings.component';
@@ -29,7 +30,7 @@ const pagesRoutes: Routes = [
         // canActivate: [ VerificaTokenGuard ],
         data: { titulo: 'Dashboard' }
     },
-    // { path: 'progress', component: ProgressComponent, data: { titulo: 'ProgressBars' } },
+    { path: 'boxes', component: BoxesComponent, data: { titulo: 'Boxes' } },
     // { path: 'graficas1', component: Graficas1Component, data: { titulo: 'Gráficas' } },
     // { path: 'promesas', component: PromesasComponent, data: { titulo: 'Promesas' } },
     // { path: 'rxjs', component: RxjsComponent, data: { titulo: 'RxJs' } },
